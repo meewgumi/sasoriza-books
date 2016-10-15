@@ -1,0 +1,185 @@
+/*Global Styles*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #141414;
+    background-image: url(img/paper-bg-tile.jpg);
+    font-family: 'IM Fell DW Pica', serif;
+}
+/*Large screen increase background size*/
+
+@media screen and (min-width: 1400px) {
+    body {
+        background-size: cover;
+    }
+}
+
+/*iPad background fix*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    body {
+    background-size: 1600px;
+}
+    .container {
+        padding-bottom: 200px;
+    }
+}
+
+
+/*Div styles*/
+.wrapper {
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+    display: table;
+}
+.container {
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+a {
+    color: #812104;
+    font-weight: 500;
+}
+a:hover {
+    color: #A92700;
+}
+/*Logo*/
+
+.logo__img {
+    width: 200px;
+    mix-blend-mode: color-burn;
+}
+.logo__text {
+    width: 350px;
+        mix-blend-mode: color-burn;
+        vertical-align: middle;
+    margin-top: -200px;
+}
+/*Small screen make logo smaller*/
+
+@media screen and (max-width: 414px) {
+    .logo__img {
+        width: 75%;
+    }
+    .logo__text {
+            margin-top: 0;
+    margin-bottom: 20px;
+    }
+/*
+    html {
+        font-size: 85%;
+    }
+*/
+    .container {
+        padding: 80px 15px 50px 15px;
+    }
+    .email--input {
+        width: 275px !important;
+        padding: 0;
+        margin: 0;
+    }
+    .email--submit {
+        width: 288px !important;
+        margin: 0;
+        padding: 0;
+    }
+    .footer__content {
+        padding: 2rem 0;
+        font-size: 11px !important;
+        line-height: 150%;
+        width: 80% !important;
+    }
+    .wholesale {
+        width: 80%;
+    margin: 3rem auto 0 auto;
+    }
+}
+/*Email form*/
+
+.email--form p {
+    margin: 0 auto;
+    max-width: 500px;
+    padding-bottom: 1rem;
+    padding-top: 10px;
+    line-height: 160%;
+}
+.email--label {
+    display: none;
+    visibility: hidden;
+}
+.email--input {
+    font-family: 'IM Fell DW Pica';
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    padding-left: 1rem;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 46px;
+}
+.email--input:focus,
+.email--submit:focus {
+    outline: none;
+    border: 1px solid #56100E;
+}
+.email--submit {
+    font-family: 'IM Fell English SC';
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    background-color: #812104;
+    color: #ffffff;
+    font-weight: 400;
+    height: 52px;
+    width: 100px;
+    font-size: 20px;
+    line-height: 52px;
+    margin-top: 2px;
+}
+.email--submit:hover {
+    background-color: #A92700;
+    cursor: pointer;
+}
+/*Footer*/
+
+.footer {
+    width: 100vw;
+    display: table-row-group;
+    vertical-align: bottom;
+    height: 20rem;
+}
+.footer__content {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    font-size: 12px;
+    line-height: 175%;
+    max-width: 500px;
+        color: #7B6F6F;
+}
+.social {
+    margin-top: 2rem;
+    color: #b0bab3;
+}
+.wholesale {
+    margin-top: 3rem;
+    line-height: 150%;
+}
+/*Fix for iOS box shadow*/
+
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+}
+input {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
