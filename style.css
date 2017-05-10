@@ -183,3 +183,6 @@ input {
     -webkit-border-radius: 0;
     border-radius: 0;
 }
+.logo {
+        mix-blend-mode: color-burn;
+}
